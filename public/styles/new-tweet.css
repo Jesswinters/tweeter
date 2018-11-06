@@ -10,7 +10,7 @@
   border-bottom: 1px solid #000;
 }
 
-.new-tweet form textarea {
+.new-tweet form .new-tweet-textarea {
   width: 100%;
   padding: 0.25rem;
 }
@@ -18,4 +18,8 @@
 .new-tweet form .counter {
   float: right;
   font-style: italic;
+}
+
+.error {
+  color: #ff0000;
 }
