@@ -1,4 +1,5 @@
-// Update character counter on keyup
+// Update character counter on input:
+// Occurs when the text content of an element is changed through the user interface
 
 $(document).ready(function() {
   $('#new-tweet-form').on('input', (event) => {
