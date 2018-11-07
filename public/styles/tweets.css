@@ -1,39 +1,43 @@
-.container--tweets {
+#tweets-container {
   margin-top: 2rem;
   opacity: 0.8;
+}
+
+#tweets-container .tweet {
+  margin-top: 2rem;
   border: 1px solid #D3D3D3;
   border-radius: 4px;
 }
 
-.container--tweets .tweet header {
+#tweets-container .tweet header {
   display: flex;
   padding: 0.5rem;
   background-color: #eee;
   border-radius: 4px;
 }
 
-.container--tweets .tweet .avatar {
+#tweets-container .tweet .avatar {
   max-width: 50px;
   max-height: 50px;
   margin-right: 1rem;
 }
 
-.container--tweets .tweet .full-name {
+#tweets-container .tweet .full-name {
   margin: 0;
   color: #667E85;
 }
 
-.container--tweets .tweet .username {
+#tweets-container .tweet .username {
   margin-top: 0.3rem;
   margin-left: auto;
   color: #A0A0A0;
 }
 
-.container--tweets .tweet .content {
+#tweets-container .tweet .content {
   padding: 1.5rem 0.5rem;
 }
 
-.container--tweets .tweet footer {
+#tweets-container .tweet footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,15 +46,15 @@
   border-top: 1px solid #D3D3D3;
 }
 
-.container--tweets .tweet .tweet-actions {
+#tweets-container .tweet .tweet-actions {
   visibility: hidden;
 }
 
-.container--tweets:hover {
+#tweets-container .tweet:hover {
   border-color: #767676;
   opacity: 1;
 }
 
-.container--tweets:hover .tweet .tweet-actions {
+#tweets-container .tweet:hover .tweet-actions {
   visibility: visible;
 }
