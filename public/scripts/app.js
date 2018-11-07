@@ -47,11 +47,19 @@ $(document).ready(function() {
         "handle": "@johann49"
       },
       "content": {
-        "text": "Es ist nichts schrecklicher als eine tätige Unwissenheit."
+        "text": "Es ist nichts schrecklicher als eine tätige Unwissenheit. <b>test</b>"
       },
       "created_at": 1461113796368
     }
   ];
+
+  // Escape HTML from Tweet content/text
+  function escapeContent(string) {		
+    const escapedText = document.createElement('span');
+
+		escapedText.appendChild(document.createTextNode(string));
+		return escapedText.innerHTML;
+  }
 
   function renderTweets(data) {
     data.forEach((tweetData) => {
@@ -60,6 +68,8 @@ $(document).ready(function() {
   }
 
   function createTweetElement(tweetData) {
+    const tweetText = escapeContent(tweetData.content.text);	
+
     return `<article class="tweet">
         <header>
           <img class="avatar" src="${tweetData.user.avatars.regular}" alt="User Avatar">
@@ -67,7 +77,7 @@ $(document).ready(function() {
           <span class="username">${tweetData.user.handle}</span>
         </header>
         <div class="content">
-          ${tweetData.content.text}
+          ${tweetText}
         </div>
         <footer>
           <span class="created-at">${tweetData.created_at}</span>
