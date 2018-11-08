@@ -2,13 +2,13 @@
   display: none;
   padding: 0.5rem;
   margin-bottom: 3rem;
-  background-color: #eee;
-  border: 1px solid #D3D3D3;
+  background-color: $color-almost-white;
+  border: 1px solid $color-light-gray;
   border-radius: 4px;
 
   h2 {
     margin-top: 0.5rem;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $color-black;
   }
 
   .new-tweet-textarea {
@@ -39,8 +39,8 @@
 #new-tweet-button {
   padding: 0.25rem 1rem;
   margin-top: 0.25rem;
-  color: #fff;
-  background-color: #179F87;
+  color: $color-white;
+  background-color: $color-green-light;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
@@ -58,5 +58,5 @@
 }
 
 .error {
-  color: #ff0000;
+  color: $color-red;
 }

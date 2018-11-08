@@ -4,14 +4,14 @@
 
 .tweet {
   margin-bottom: 2rem;
-  border: 1px solid #D3D3D3;
+  border: 1px solid $color-light-gray;
   border-radius: 4px;
   transition: 0.3s ease;
 
   header {
     display: flex;
     padding: 0.5rem;
-    background-color: #eee;
+    background-color: $color-almost-white;
     border-radius: 4px;
   }
 
@@ -21,7 +21,7 @@
     align-items: center;
     padding: 0.5rem;
     font-size: 0.9rem;
-    border-top: 1px solid #D3D3D3;
+    border-top: 1px solid $color-light-gray;
   }
 
   .avatar {
@@ -32,13 +32,13 @@
 
   .full-name {
     margin: 0;
-    color: #667E85;
+    color: $color-darker-gray;
   }
 
   .username {
     margin-top: 0.3rem;
     margin-left: auto;
-    color: #A0A0A0;
+    color: $color-dark-gray;
   }
 
   .content {
@@ -52,7 +52,7 @@
   }
 
   &:hover {
-    border-color: #767676;
+    border-color: $color-darker-gray;
     opacity: 1;
 
     .tweet-actions {

@@ -23,6 +23,7 @@ $(document).ready(function() {
   // Create tweet element from data using template literals
   function createTweetElement(tweetData) {
     const tweetText = escapeContent(tweetData.content.text);
+    const tweetCreated = Math.floor((Date.now() - tweetData.created_at) / (24 * 60 * 60 * 1000));
 
     return `<article class="tweet">
         <header>
@@ -34,7 +35,7 @@ $(document).ready(function() {
           ${tweetText}
         </div>
         <footer>
-          <span class="created-at">${tweetData.created_at}</span>
+          <span class="created-at">${tweetCreated} days ago</span>
           <span class="tweet-actions">🚩 🎺 💚</span>
         </footer>
       </article>`;

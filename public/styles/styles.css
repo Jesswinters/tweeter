@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
   color: #244751;
-  background-color: #eee; }
+  background-color: #eeeeee; }
 
 .container {
   width: 100%;
@@ -18,7 +18,7 @@ body {
   padding: 2rem;
   max-width: 450px;
   margin: 0 auto;
-  background-color: #fff; }
+  background-color: #ffffff; }
 
 #nav-bar {
   position: sticky;
@@ -42,25 +42,25 @@ body {
     margin-left: auto;
     font-size: 1.3rem;
     color: #179E86;
-    background-color: #E8FDFF;
-    border: 1px solid #000;
+    background-color: #e8fdff;
+    border: 1px solid #000000;
     border-radius: 4px;
     transition: 0.3s ease; }
     #nav-bar .compose-tweet-button:hover {
-      color: #000;
-      background-color: #fff;
+      color: #000000;
+      background-color: #ffffff;
       cursor: pointer; }
 
 .new-tweet {
   display: none;
   padding: 0.5rem;
   margin-bottom: 3rem;
-  background-color: #eee;
+  background-color: #eeeeee;
   border: 1px solid #D3D3D3;
   border-radius: 4px; }
   .new-tweet h2 {
     margin-top: 0.5rem;
-    border-bottom: 1px solid #000; }
+    border-bottom: 1px solid #000000; }
   .new-tweet .new-tweet-textarea {
     width: 100%;
     padding: 0.25rem; }
@@ -81,8 +81,8 @@ body {
 #new-tweet-button {
   padding: 0.25rem 1rem;
   margin-top: 0.25rem;
-  color: #fff;
-  background-color: #179F87;
+  color: #ffffff;
+  background-color: #179E86;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
@@ -107,7 +107,7 @@ body {
   .tweet header {
     display: flex;
     padding: 0.5rem;
-    background-color: #eee;
+    background-color: #eeeeee;
     border-radius: 4px; }
   .tweet footer {
     display: flex;
@@ -134,7 +134,7 @@ body {
     opacity: 0;
     transition: 0.2s ease; }
   .tweet:hover {
-    border-color: #767676;
+    border-color: #667E85;
     opacity: 1; }
     .tweet:hover .tweet-actions {
       opacity: 1; }
