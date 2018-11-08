@@ -62,4 +62,10 @@ $(document).ready(function() {
   });
 
   fetchTweets();
+
+  $('[data-compose-tweet-button]').on('click', () => {
+    $('[data-new-tweet-container]').slideToggle(() => {
+      $('[data-new-tweet-textarea]').focus();
+    });
+  });
 });

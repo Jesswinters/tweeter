@@ -1,4 +1,5 @@
 .new-tweet {
+  display: none;
   padding: 0.5rem;
   margin-bottom: 3rem;
   background-color: #eee;
@@ -38,6 +39,7 @@
 }
 
 .new-tweet .error-message {
+  margin-left: 0.5rem;
   font-size: 14px;
   opacity: 0;
   visibility: hidden;

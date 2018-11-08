@@ -13,33 +13,30 @@ $(document).ready(function() {
     let newCount = maxLength - tweetTextarea.length;
     characterCounter.html(newCount);
 
-    // If current count of characters is longer than max length,
-    // display error message and change counter to red
-    if (tweetTextarea.length > maxLength) {
-      errorMessage
-        .html('Tweet content is over 140 characters.')
-        .addClass('visible');
-      characterCounter.addClass('error');
-    } else {
-      errorMessage
-        .html('')
-        .removeClass('visible');
-      characterCounter.removeClass('error');
-    }
-
-    // If current count of characters is longer than max length or empty,
-    // disable button and display error message
+    // If current count of characters is longer than max length or empty, disable button
     if (tweetTextarea.length > maxLength || tweetTextarea.trim() === '') {
       submitButton
         .prop('disabled', true)
         .addClass('disabled');
-      errorMessage
-        .html('Please enter a message.')
-        .addClass('visible');
     } else {
       submitButton
         .prop('disabled', false)
         .removeClass('disabled');
+    }
+
+    // If current count of characters is longer than max length or empty,
+    // display related error message and change character count to red
+    if (tweetTextarea.length > maxLength) {
+      characterCounter.addClass('error');
+      errorMessage
+        .html('Tweet content is over 140 characters.')
+        .addClass('visible');
+    } else if (tweetTextarea.trim() === '') {
+      errorMessage
+        .html('Please enter a message.')
+        .addClass('visible');
+    } else {
+      characterCounter.removeClass('error');
       errorMessage
         .html('')
         .removeClass('visible');
