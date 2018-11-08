@@ -16,7 +16,7 @@
   padding: 0.25rem;
 }
 
-.new-tweet form [type='submit'] {
+#new-tweet-button {
   padding: 0.25rem 1rem;
   margin-top: 0.25rem;
   color: #fff;
@@ -24,14 +24,37 @@
   border: 0;
   border-radius: 4px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.new-tweet form .counter {
+#new-tweet-button:hover {
+  opacity: 0.8;
+}
+
+.new-tweet .counter {
   float: right;
   margin-top: 0.5rem;
   font-style: italic;
 }
 
+.new-tweet .error-message {
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.1s linear;
+}
+
+.new-tweet .error-message.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 .error {
   color: #ff0000;
+}
+
+#new-tweet-button.disabled,
+#new-tweet-button.disabled:hover {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
