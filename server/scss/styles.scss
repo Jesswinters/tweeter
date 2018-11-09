@@ -1,5 +1,6 @@
-// Settings
-@import "lib/_settings.scss";
+// Internal libraries
+@import "lib/_settings";
+@import "lib/mixins";
 
 // Global styles
 @import "layout/_layout";

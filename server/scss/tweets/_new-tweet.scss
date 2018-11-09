@@ -1,30 +1,30 @@
 .new-tweet {
   display: none;
-  padding: 0.5rem;
-  margin-bottom: 3rem;
+  padding: $space-xx-small;
+  margin-bottom: $space-xx-large;
   background-color: $color-almost-white;
   border: 1px solid $color-light-gray;
-  border-radius: 4px;
+  border-radius: $space-xxx-small;
 
   h2 {
-    margin-top: 0.5rem;
+    margin-top: $space-xx-small;
     border-bottom: 1px solid $color-black;
   }
 
   .new-tweet-textarea {
     width: 100%;
-    padding: 0.25rem;
+    padding: $space-xxx-small;
   }
 
   .counter {
     float: right;
-    margin-top: 0.5rem;
+    margin-top: $space-xx-small;
     font-style: italic;
   }
 
   .error-message {
-    margin-left: 0.5rem;
-    font-size: 14px;
+    margin-left: $space-xx-small;
+    font-size: $font-body-size-smaller;
     opacity: 0;
     visibility: hidden;
     transition: visibility 0s, opacity 0.1s linear;
@@ -37,12 +37,12 @@
 }
 
 #new-tweet-button {
-  padding: 0.25rem 1rem;
-  margin-top: 0.25rem;
+  padding: $space-xxx-small $space-small;
+  margin-top: $space-xxx-small;
   color: $color-white;
   background-color: $color-green-light;
   border: 0;
-  border-radius: 4px;
+  border-radius: $space-xxx-small;
   cursor: pointer;
   transition: 0.3s ease;
 

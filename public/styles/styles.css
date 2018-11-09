@@ -15,10 +15,13 @@ body {
 .container {
   width: 100%;
   min-height: 100vh;
-  padding: 2rem;
-  max-width: 450px;
+  padding: 1rem;
   margin: 0 auto;
   background-color: #ffffff; }
+  @media screen and (min-width: 720px) {
+    .container {
+      max-width: 600px;
+      padding: 2rem; } }
 
 #nav-bar {
   position: sticky;
@@ -27,37 +30,50 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 80px;
-  padding: 0 2rem;
+  height: 50px;
+  padding: 0 1rem;
   color: #e8fdff;
   background-color: #00a087; }
+  @media screen and (min-width: 720px) {
+    #nav-bar {
+      height: 80px;
+      padding: 0 2rem; } }
   #nav-bar .logo {
-    width: 80px;
-    height: 80px; }
+    max-width: 40px; }
+    @media screen and (min-width: 720px) {
+      #nav-bar .logo {
+        max-width: 80px; } }
   #nav-bar .header {
-    margin-left: 10px;
-    font-size: 2rem; }
-  #nav-bar .compose-tweet-button {
-    padding: 0.8rem;
-    margin-left: auto;
-    font-size: 1.3rem;
-    color: #179E86;
-    background-color: #e8fdff;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    transition: 0.3s ease; }
-    #nav-bar .compose-tweet-button:hover {
-      color: #000000;
-      background-color: #ffffff;
-      cursor: pointer; }
+    margin-left: 0.5rem;
+    font-size: 20px; }
+    @media screen and (min-width: 720px) {
+      #nav-bar .header {
+        font-size: 32px; } }
+
+.compose-tweet-button {
+  padding: 0.25rem;
+  margin-left: auto;
+  color: #179E86;
+  background-color: #e8fdff;
+  border: 1px solid #000000;
+  border-radius: 0.25rem;
+  transition: 0.3s ease; }
+  @media screen and (min-width: 720px) {
+    .compose-tweet-button {
+      padding: 0.75rem;
+      font-size: 20px; } }
+  .compose-tweet-button:hover {
+    color: #000000;
+    background-color: #ffffff;
+    cursor: pointer; }
 
 .new-tweet {
   display: none;
   padding: 0.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3.125rem;
   background-color: #eeeeee;
   border: 1px solid #D3D3D3;
-  border-radius: 4px; }
+  border-radius: 0.25rem; }
   .new-tweet h2 {
     margin-top: 0.5rem;
     border-bottom: 1px solid #000000; }
@@ -84,7 +100,7 @@ body {
   color: #ffffff;
   background-color: #179E86;
   border: 0;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   cursor: pointer;
   transition: 0.3s ease; }
   #new-tweet-button:hover {
@@ -102,19 +118,19 @@ body {
 .tweet {
   margin-bottom: 2rem;
   border: 1px solid #D3D3D3;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   transition: 0.3s ease; }
   .tweet header {
     display: flex;
     padding: 0.5rem;
     background-color: #eeeeee;
-    border-radius: 4px; }
+    border-radius: 0.25rem; }
   .tweet footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 14px;
     border-top: 1px solid #D3D3D3; }
   .tweet .avatar {
     max-width: 50px;
@@ -122,11 +138,19 @@ body {
     margin-right: 1rem; }
   .tweet .full-name {
     margin: 0;
+    font-size: 20px;
     color: #667E85; }
+    @media screen and (min-width: 720px) {
+      .tweet .full-name {
+        font-size: 24px; } }
   .tweet .username {
-    margin-top: 0.3rem;
+    margin-top: 0.25rem;
     margin-left: auto;
+    font-size: 14px;
     color: #A0A0A0; }
+    @media screen and (min-width: 720px) {
+      .tweet .username {
+        font-size: 16px; } }
   .tweet .content {
     padding: 1.5rem 0.5rem; }
   .tweet .tweet-actions {

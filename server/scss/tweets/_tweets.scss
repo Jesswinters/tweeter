@@ -3,46 +3,56 @@
 }
 
 .tweet {
-  margin-bottom: 2rem;
+  margin-bottom: $space-x-large;
   border: 1px solid $color-light-gray;
-  border-radius: 4px;
+  border-radius: $space-xxx-small;
   transition: 0.3s ease;
 
   header {
     display: flex;
-    padding: 0.5rem;
+    padding: $space-xx-small;
     background-color: $color-almost-white;
-    border-radius: 4px;
+    border-radius: $space-xxx-small;
   }
 
   footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
-    font-size: 0.9rem;
+    padding: $space-xx-small;
+    font-size: $font-body-size-smaller;
     border-top: 1px solid $color-light-gray;
   }
 
   .avatar {
     max-width: 50px;
     max-height: 50px;
-    margin-right: 1rem;
+    margin-right: $space-small;
   }
 
   .full-name {
     margin: 0;
+    font-size: $font-medium-size;
     color: $color-darker-gray;
+
+    @include media($min: $bp-small) {
+      font-size: $font-large-size;
+    }
   }
 
   .username {
-    margin-top: 0.3rem;
+    margin-top: $space-xxx-small;
     margin-left: auto;
+    font-size: $font-body-size-smaller;
     color: $color-dark-gray;
+
+    @include media($min: $bp-small) {
+      font-size: $font-body-size;
+    }
   }
 
   .content {
-    padding: 1.5rem 0.5rem;
+    padding: $space-x-medium $space-xx-small;
   }
 
   .tweet-actions {

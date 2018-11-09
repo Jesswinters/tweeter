@@ -6,7 +6,7 @@
 
 $(document).ready(function() {
   // Escape HTML from Tweet content/text
-  function escapeContent(string) {		
+  function escapeContent(string) {
     const escapedText = document.createElement('span');
 
 		escapedText.appendChild(document.createTextNode(string));
@@ -60,6 +60,9 @@ $(document).ready(function() {
     .done(() => {
       fetchTweets();
     });
+
+    //Clear text input after clicking on the tweet button
+    $form.find('.new-tweet-textarea').val('');
   });
 
   fetchTweets();
