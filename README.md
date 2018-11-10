@@ -2,7 +2,27 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+Users are able to submit tweets and have them display instantly, without a page refresh, using the magic of AJAX! Built using HTML, SCSS, JS, jQuery, Express, and MongoDB.
+
+## Final Product
+
+###### Desktop:
+!["Screenshot of desktop layout"](https://github.com/Jesswinters/tweeter/blob/master/docs/tweeter-desktop.png)
+
+###### Mobile/Tablet:
+!["Screenshot of mobile/tablet layout"](https://github.com/Jesswinters/tweeter/blob/master/docs/tweeter-mobile-tablet.png)
+
+###### Tweet Form:
+!["Screenshot of tweet form"](https://github.com/Jesswinters/tweeter/blob/master/docs/tweeter-tweet-form.png)
+
+###### Tweet:
+!["Screenshot of tweet"](https://github.com/Jesswinters/tweeter/blob/master/docs/tweeter-tweet.png)
+
+###### Tweet Form No Mesage Error:
+!["Screenshot of no message error"](https://github.com/Jesswinters/tweeter/blob/master/docs/tweeter-no-message-error.png)
+
+###### Tweet Form Message Too Long Error:
+!["Screenshot of message too long error"](https://github.com/Jesswinters/tweeter/blob/master/docs/tweeter-message-too-long-error.png)
 
 ## Getting Started
 
