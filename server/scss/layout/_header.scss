@@ -8,7 +8,7 @@
   height: 50px;
   padding: 0 $space-small;
   color: $color-off-white;
-  background-color: $color-green;
+  background: linear-gradient($color-green, $color-green-light);
   box-shadow: 0 1px 1px 1px rgba($color-dark-blue, 0.15);
 
   @include media($min: $bp-small) {
